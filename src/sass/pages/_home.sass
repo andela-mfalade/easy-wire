@@ -1,0 +1,124 @@
+@import abstracts/_utils
+@import abstracts/_variables
+
+body
+    background: $easyGrey
+
+.verticallyCenteredContainer
+    display: flex
+
+.verticallyCenteredContent
+    align-self: center
+
+
+// Intro area
+#introArea
+    @extend .verticallyCenteredContainer
+    background: url('../images/black_lozenge.png') $easyBlack
+    height: 600px
+    margin-top: 60px
+    color: $easyWhite
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 0.25)
+    
+    .introContent
+        width: 100%
+
+    .intro-text
+        padding-left: 150px
+
+// Conversion form area styling
+#conversionFormContainer
+    background: $easyWhite
+    margin-left: 50px
+    height: 400px
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    position: relative
+    padding: 20px 30px
+    opacity: 0.9
+    color: $easyLightGrey
+    font-size: 18px
+    box-shadow: 0 2px 0 rgba(255,255,255,0.15)
+
+    .shortForm
+        width: 100px
+
+    #conversionForm input[type="text"]
+        border: none
+        border-radius: 0
+        border-bottom: 1px solid $easyLightGrey
+
+.jumboText
+    font-weight: 600
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.25)
+
+.lightTitle
+    font-weight: 100
+
+    
+#introContents
+    @extend .verticallyCenteredContent
+
+#howItWorks
+    @extend .verticallyCenteredContainer
+    @extend .largePadding
+    background: $easyBlue
+    color: $easyWhite
+    padding: 55px;
+
+#whyItWorks
+    background: $easySubtleWhite
+    @extend .largePadding
+    color: $easyDeepBlue
+    font-weight: 600
+
+//-- Download Section stylings
+#downloadSection
+    @extend .largePadding
+    background: url('../images/footerbg.jpg') no-repeat center center #084163 
+    background-size: cover
+    color: $easyWhite
+
+    h2
+        font-weight: 100
+
+.getAppImg
+    img
+        max-width: 180px
+
+.imgHolder
+    max-width: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+.boldTextContainer
+    margin-bottom: 75px
+
+.responsive_img
+    width: 100%
+
+.transImg
+    margin-top: 80px
+
+
+//-- Why it works
+
+.whyItWorks-item
+    text-align: center
+    margin-bottom: 70px
+    height: 220px
+
+.sectionImage
+    margin: 0 auto
+    width: 130px
+    height: 130px
+
+.sectionText
+    h4
+        font-weight: 700
+        color: #03111a
+    .textBox
+        font-weight: 500
+        padding: 5px 80px
+        color: #494B4C

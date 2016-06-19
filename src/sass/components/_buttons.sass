@@ -1,0 +1,57 @@
+@import abstracts/_mixins
+@import abstracts/_variables
+
+@mixin ghostButton($buttonColor, $radius)
+    height: $easyButtonHeight
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    border-radius:         $radius
+    padding: 5px 30px
+    width: 150px
+    font-weight: 200
+    text-align: center
+    align-self: center
+    color: $buttonColor
+    border: 2px solid $buttonColor
+    text-shadow: none
+    background: transparent
+
+@mixin invertedGhostButton($buttonColor)
+    @include ghostButton($buttonColor, $easyButtonRadius)
+    background: $buttonColor !important
+    color: $easyWhite!important
+
+.ghostButtonGreen
+    @include ghostButton($easyGreen, $easyButtonRadius)
+
+.ghostButtonBlue
+    @include ghostButton($easyBlue, $easyButtonRadius)
+
+.ghostButtonInvertedGreen
+    @include invertedGhostButton($easyGreen)
+
+.ghostButtonInvertedBlue
+    @include invertedGhostButton($easyBlue)
+
+.jumboBtn
+    font-size: 22px;
+    text-align: center;
+    height: 50px;
+    width: 210px;
+    vertical-align: middle;
+
+.buttonHolder
+    height: $easyHeaderHeight
+    display: flex
+    justify-content: center
+
+.paddedBtn
+    height: 42px
+    margin-left: 10px
+
+
+// Event handlers
+.ghostButtonGreen:active, .ghostButtonBlue:active, .ghostButtonInvertedGreen:active,.ghostButtonInvertedBlue:active .ghostButtonGreen:hover, .ghostButtonBlue:hover, .ghostButtonInvertedGreen:hover, .ghostButtonInvertedBlue:hover, .ghostButtonGreen:visited, .ghostButtonBlue:visited, .ghostButtonInvertedGreen:visited,.ghostButtonInvertedBlue:visited
+    text-decoration: none
+    outline: none

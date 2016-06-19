@@ -1,0 +1,22 @@
+{
+  "name": "easyWaya",
+  "version": "0.0.0",
+  "authors": [
+    "andela-mfalade <mayowa.falade@andela.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.0.0",
+    "bootstrap": "~3.3.6"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
+  }
+}
