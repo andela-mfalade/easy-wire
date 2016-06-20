@@ -437,7 +437,7 @@ body {
   border-bottom: solid 1px #e9f0f3; }
 
 #downloadSection {
-  background: linear-gradient(rgba(5, 45, 69, 0.26), #010f19), url("../images/footerbg.jpg") no-repeat center center #084163;
+  background: url("../images/footerbg.jpg") no-repeat center center #084163;
   background-size: cover;
   color: #FFFFFF; }
   #downloadSection h2 {
