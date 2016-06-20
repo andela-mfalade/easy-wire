@@ -380,7 +380,7 @@ body {
   align-self: center; }
 
 #introArea {
-  background: url("../images/black_lozenge.png") #02101A;
+  background: linear-gradient(#052d45, rgba(0, 0, 0, 0.75)), url("../images/heroimg.jpeg");
   height: 600px;
   margin-top: 60px;
   color: #FFFFFF;
