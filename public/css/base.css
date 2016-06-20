@@ -67,7 +67,7 @@ p {
   border: none; }
 
 footer {
-  background: linear-gradient(#010F19, #010F19);
+  background: linear-gradient(rgba(1, 15, 26, 0.93), #010F19);
   border-top: 1px solid rgba(64, 74, 82, 0.48);
   padding-top: 80px;
   padding-bottom: 50px;
@@ -196,7 +196,7 @@ footer {
   border-radius: 9999px;
   height: 35px;
   color: #0593E7 !important;
-  border: 2px solid #0593E7; }
+  border: 1px solid #0593E7; }
   .ghostButton:hover {
     background: #0593E7;
     color: #FFFFFF !important; }
@@ -209,7 +209,7 @@ footer {
     border-radius: 9999px;
     height: 35px;
     color: #03E04C !important;
-    border: 2px solid #03E04C; }
+    border: 1px solid #03E04C; }
     .ghostButton.defaultGreen:hover {
       background: #03E04C;
       color: #FFFFFF !important; }
@@ -222,7 +222,7 @@ footer {
     border-radius: 9999px;
     height: 35px;
     color: #0593E7 !important;
-    border: 2px solid #0593E7; }
+    border: 1px solid #0593E7; }
     .ghostButton.defaultBlue:hover {
       background: #0593E7;
       color: #FFFFFF !important; }
@@ -235,7 +235,7 @@ footer {
     border-radius: 9999px;
     height: 35px;
     color: #03E04C !important;
-    border: 2px solid #03E04C;
+    border: 1px solid #03E04C;
     background: #03E04C !important;
     color: #FFFFFF !important; }
     .ghostButton.invertedGreen:hover {
@@ -253,7 +253,7 @@ footer {
     border-radius: 9999px;
     height: 35px;
     color: #0593E7 !important;
-    border: 2px solid #0593E7;
+    border: 1px solid #0593E7;
     background: #0593E7 !important;
     color: #FFFFFF !important; }
     .ghostButton.invertedBlue:hover {
@@ -278,10 +278,10 @@ footer {
   border-radius: 9999px; }
 
 .blue {
-  border: 2px solid #0593E7; }
+  border: 1px solid #0593E7; }
 
 .white {
-  border: 2px solid #FFFFFF; }
+  border: 1px solid #FFFFFF; }
 
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
@@ -425,7 +425,7 @@ body {
   font-weight: 100; }
 
 #howItWorks {
-  background: #0593E7;
+  background: linear-gradient(#0c97e8, rgba(3, 224, 76, 0.5)), #0593E7;
   color: #FFFFFF;
   padding: 55px; }
 
