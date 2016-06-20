@@ -1,0 +1,6 @@
+@mixin border-radius($radius) {
+    @each $vendorPrefix in $vendorPrefixes {
+        #{$vendorPrefix}-border-radius:$radius;
+    }
+    border-radius:$radius;
+}

@@ -15,8 +15,12 @@
 
 .smMarginTop
     margin-top: 25px
+
 .clearPadding
     padding: 0
+
+.clearMargin
+    margin: 0
 
 .bolder
     text-weight: 600
@@ -26,19 +30,21 @@
     text-align: center
     display: inline-block
     position: relative
+    color: $easyLightGrey
 
-.fancy:before, .fancy:after
-    content: ""
-    position: absolute
-    height: 5px
-    border-bottom: 1px solid $easyLightGrey
-    top: 0
-    width: 180px
+    &:before,
+    &:after
+        content: ""
+        position: absolute
+        height: 5px
+        border-bottom: 1px solid $easyLightGrey
+        top: 0
+        width: 180px
 
-.fancy:before
-    right: 100%
-    margin-right: 15px
+    &:before
+        right: 100%
+        margin-right: 35px
 
-.fancy:after
-    left: 100%
-    margin-left: 15px
+    &:after
+        left: 100%
+        margin-left: 35px
