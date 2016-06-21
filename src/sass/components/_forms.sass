@@ -1,13 +1,26 @@
+@import abstracts/_variables
+
 .ghostForm
-    width: 100%
+    max-width: 500px;
+    width: 350px!important;
     background: transparent
     border-radius: 9999px
 
 .blue
     @extend .ghostForm
     border: 1px solid #0593E7
+    &:active,
+    &:focus
+        border: 1px solid $easyWhite
+        color: $easyWhite
+        outline: none
 
 .white
     @extend .ghostForm
-    border: 1px solid #FFFFFF
-    
+    border: 1px solid $easyWhite
+    padding: 5px 20px
+    &:active,
+    &:focus
+        border: 1px solid $easyBlue
+        color: $easyBlue
+        outline: none
