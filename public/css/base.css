@@ -308,7 +308,8 @@ footer {
   margin: 0; }
 
 .bolder {
-  text-weight: 600; }
+  font-weight: 900 !important;
+  text-shadow: 0 1px 0 #FFFFFF; }
 
 .fancy {
   line-height: 0.5;
@@ -355,7 +356,8 @@ footer {
   margin: 0; }
 
 .bolder {
-  text-weight: 600; }
+  font-weight: 900 !important;
+  text-shadow: 0 1px 0 #FFFFFF; }
 
 .fancy {
   line-height: 0.5;
@@ -387,11 +389,11 @@ body {
   align-self: center; }
 
 #introArea {
-  background: linear-gradient(#052d45, rgba(0, 0, 0, 0.75)), url("../images/heroimg.jpeg");
+  background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.49)), url("../images/heroimg.jpeg");
   height: 600px;
   margin-top: 60px;
   color: #FFFFFF;
-  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.25); }
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15); }
   #introArea .introContent {
     width: 100%; }
   #introArea .intro-text {
@@ -418,14 +420,15 @@ body {
     border-bottom: 1px solid #B7C1C5; }
 
 .jumboText {
-  font-weight: 600;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.25); }
+  font-size: 55px;
+  font-weight: 900;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.15); }
 
 .lightTitle {
   font-weight: 100; }
 
 #howItWorks {
-  background: linear-gradient(#0c97e8, rgba(3, 224, 76, 0.5)), #0593E7;
+  background: #1B95E4;
   color: #FFFFFF;
   padding: 55px; }
 
@@ -444,13 +447,16 @@ body {
     font-weight: 100; }
 
 .getAppImg img {
-  max-width: 180px; }
+  max-width: 300px; }
 
 .imgHolder {
   max-width: 110px;
   width: 100%;
+  height: 170px;
   text-align: center;
   margin: 0 auto; }
+  .imgHolder img {
+    width: 100%; }
 
 .boldTextContainer {
   margin-bottom: 75px; }
@@ -459,7 +465,7 @@ body {
   width: 100%; }
 
 .transImg {
-  margin-top: 80px; }
+  margin-top: 50px; }
 
 .whyItWorks-item {
   text-align: center;

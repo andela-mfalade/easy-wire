@@ -14,11 +14,11 @@ body
 // Intro area
 #introArea
     @extend .verticallyCenteredContainer
-    background: linear-gradient(rgb(5, 45, 69), rgba(0,0,0,0.75)), url("../images/heroimg.jpeg")
+    background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.49)), url("../images/heroimg.jpeg")
     height: 600px
     margin-top: 60px
     color: $easyWhite
-    text-shadow: 0 2px 3px rgba(255, 255, 255, 0.25)
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15)
     
     .introContent
         width: 100%
@@ -50,8 +50,9 @@ body
         border-bottom: 1px solid $easyLightGrey
 
 .jumboText
-    font-weight: 600
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.25)
+    font-size: 55px
+    font-weight: 900
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.15)
 
 .lightTitle
     font-weight: 100
@@ -63,7 +64,7 @@ body
 #howItWorks
     @extend .verticallyCenteredContainer
     @extend .largePadding
-    background: linear-gradient(rgb(12, 151, 232), rgba(3, 224, 76, 0.5)), #0593E7
+    background: #1B95E4
     color: $easyWhite
     padding: 55px;
 
@@ -89,13 +90,16 @@ body
 
 .getAppImg
     img
-        max-width: 180px
+        max-width: 300px
 
 .imgHolder
     max-width: 110px;
     width: 100%;
+    height: 170px
     text-align: center;
     margin: 0 auto;
+    img
+        width: 100%
 
 .boldTextContainer
     margin-bottom: 75px
@@ -104,7 +108,7 @@ body
     width: 100%
 
 .transImg
-    margin-top: 80px
+    margin-top: 50px
 
 
 //-- Why it works
