@@ -7,20 +7,27 @@ body
 .verticallyCenteredContainer
     display: flex
 
-.verticallyCenteredContent
-    align-self: center
+    &>*
+        align-self: center
 
 
 // Intro area
 #introArea
     @extend .verticallyCenteredContainer
-    background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.49)), url("../images/heroimg.jpeg")
     height: 600px
     margin-top: 60px
     color: $easyWhite
     text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15)
+    background: $easyBlack
+
+    input[type="text"]
+        height: 35px
+    
+    .vegas-slide
+        background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.99))
     
     .introContent
+        margin-top: 9%
         width: 100%
 
     .intro-text
@@ -30,7 +37,7 @@ body
 #conversionFormContainer
     background: $easyWhite
     margin-left: 50px
-    height: 400px
+    height: 350px
     border-top-left-radius: 15px
     border-bottom-left-radius: 15px
     position: relative
@@ -39,6 +46,9 @@ body
     color: $easyLightGrey
     font-size: 18px
     box-shadow: 0 2px 0 rgba(255,255,255,0.15)
+
+    .feeBox
+        height: 30px;
 
     .shortForm
         width: 100px
@@ -50,16 +60,13 @@ body
         border-bottom: 1px solid $easyLightGrey
 
 .jumboText
-    font-size: 55px
+    font-size: 65px
     font-weight: 900
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.15)
 
 .lightTitle
     font-weight: 100
 
-    
-#introContents
-    @extend .verticallyCenteredContent
 
 #howItWorks
     @extend .verticallyCenteredContainer
@@ -81,7 +88,7 @@ body
 //-- Download Section stylings
 #downloadSection
     @extend .largePadding
-    background: url("../images/footerbg.jpg") no-repeat center center #084163 
+    background: url("http://res.cloudinary.com/doy1ofzki/image/upload/v1466680969/footerbg_c4bsxf.jpg") no-repeat center center #084163 
     background-size: cover
     color: $easyWhite
 

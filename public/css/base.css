@@ -323,6 +323,7 @@ footer {
 
 .fancy {
   line-height: 0.5;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -333,13 +334,13 @@ footer {
     height: 5px;
     border-bottom: 1px solid #B7C1C5;
     top: 0;
-    width: 180px; }
+    width: 160px; }
   .fancy:before {
     right: 100%;
-    margin-right: 35px; }
+    margin-right: 15px; }
   .fancy:after {
     left: 100%;
-    margin-left: 35px; }
+    margin-left: 15px; }
 
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
@@ -371,6 +372,7 @@ footer {
 
 .fancy {
   line-height: 0.5;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -381,30 +383,34 @@ footer {
     height: 5px;
     border-bottom: 1px solid #B7C1C5;
     top: 0;
-    width: 180px; }
+    width: 160px; }
   .fancy:before {
     right: 100%;
-    margin-right: 35px; }
+    margin-right: 15px; }
   .fancy:after {
     left: 100%;
-    margin-left: 35px; }
+    margin-left: 15px; }
 
 body {
   background: #EEEEEE; }
 
 .verticallyCenteredContainer, #introArea, #howItWorks {
   display: flex; }
-
-.verticallyCenteredContent, #introContents {
-  align-self: center; }
+  .verticallyCenteredContainer > *, #introArea > *, #howItWorks > * {
+    align-self: center; }
 
 #introArea {
-  background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.49)), url("../images/heroimg.jpeg");
   height: 600px;
   margin-top: 60px;
   color: #FFFFFF;
-  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15); }
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15);
+  background: #02101A; }
+  #introArea input[type="text"] {
+    height: 35px; }
+  #introArea .vegas-slide {
+    background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.99)); }
   #introArea .introContent {
+    margin-top: 9%;
     width: 100%; }
   #introArea .intro-text {
     padding-left: 150px; }
@@ -412,7 +418,7 @@ body {
 #conversionFormContainer {
   background: #FFFFFF;
   margin-left: 50px;
-  height: 400px;
+  height: 350px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   position: relative;
@@ -421,6 +427,8 @@ body {
   color: #B7C1C5;
   font-size: 18px;
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.15); }
+  #conversionFormContainer .feeBox {
+    height: 30px; }
   #conversionFormContainer .shortForm {
     width: 100px; }
   #conversionFormContainer #conversionForm input[type="text"] {
@@ -430,7 +438,7 @@ body {
     border-bottom: 1px solid #B7C1C5; }
 
 .jumboText {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 900;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.15); }
 
@@ -450,7 +458,7 @@ body {
   border-bottom: solid 1px #e9f0f3; }
 
 #downloadSection {
-  background: url("../images/footerbg.jpg") no-repeat center center #084163;
+  background: url("http://res.cloudinary.com/doy1ofzki/image/upload/v1466680969/footerbg_c4bsxf.jpg") no-repeat center center #084163;
   background-size: cover;
   color: #FFFFFF; }
   #downloadSection h2 {
