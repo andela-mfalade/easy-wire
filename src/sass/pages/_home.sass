@@ -3,6 +3,8 @@
 
 body
     background: $easyGrey
+    .vegas-container
+        position: relative
 
 .verticallyCenteredContainer
     display: flex
@@ -14,7 +16,9 @@ body
 // Intro area
 #introArea
     @extend .verticallyCenteredContainer
-    height: 600px
+    min-height: 500px
+    height: 100%
+    position: relative
     margin-top: 60px
     color: $easyWhite
     text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15)
@@ -27,7 +31,7 @@ body
         background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.99))
     
     .introContent
-        margin-top: 9%
+        margin-top: 6%
         width: 100%
 
     .intro-text
@@ -37,7 +41,8 @@ body
 #conversionFormContainer
     background: $easyWhite
     margin-left: 50px
-    height: 350px
+    min-height: 200px
+    height: 100%
     border-top-left-radius: 15px
     border-bottom-left-radius: 15px
     position: relative
