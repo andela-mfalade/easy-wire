@@ -148,7 +148,14 @@ footer {
   .hideOnMobile {
     display: none !important; }
   .boldTextContainer {
-    margin-bottom: 40px !important; }
+    margin-bottom: 35px !important; }
+  .whyItWorks-item {
+    margin-bottom: 10px !important; }
+  .sectionImage {
+    width: 110px !important;
+    height: 110px !important; }
+  #downloadSection img {
+    height: 200px; }
   .ghostForm, .blue, .white,
   .blue,
   .white {
@@ -192,7 +199,7 @@ footer {
 
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
-/*==========  Non-Mobile First Method  ==========*/
+/*==========  Non-Mobile VPs  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
