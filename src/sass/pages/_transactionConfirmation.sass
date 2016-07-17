@@ -1,0 +1,55 @@
+@import abstracts/_utils
+@import abstracts/_variables
+
+
+#confirmTransaction
+    height: 100%
+    background: $easyWhite
+    margin-top: 70px
+
+    .confirmationPageButtons
+        margin: 50px 0
+
+    ul
+        padding: 0
+        margin-bottom: 100px
+        li
+            list-style: none
+
+.transactionContentHolder
+    border: 1px solid $easyGrey
+    margin-top: 30px
+    overflow: auto
+    border-radius: 10px
+    height: auto
+    padding: 40px
+
+.submitButtonHolder
+    margin: 50px auto
+
+.confirmationReceipt
+    margin-bottom: 50px
+
+.circularTextHolder
+    @include border-radius(50%)
+    border: 2px solid $easyGrey
+    height: 20px
+    width: 20px
+    overflow: auto
+    padding: 8px
+    margin-right: 10px
+    text-align: center
+    &.lg
+        height: 100px
+        width: 100px
+
+#transactionDetailsTable
+    border-collapse: separate
+    border-spacing: 0 15px
+    width: 100%
+    color: $easyDarkGrey
+
+    tr
+        margin: 20px 0
+        td:last-child
+            margin-left: 50px

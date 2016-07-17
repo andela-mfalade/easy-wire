@@ -331,6 +331,8 @@ footer {
     .ghostButton.invertedBlue:hover {
       background: transparent !important;
       color: #0593E7 !important; }
+  .ghostButton.fixedWidth {
+    width: 200px; }
 
 .buttonHolder {
   height: 60px;
@@ -577,3 +579,106 @@ body {
   font-weight: 500;
   padding: 5px 80px;
   color: #494B4C; }
+
+.largePadding, #howItWorks, #whyItWorks, #downloadSection {
+  padding: 80px; }
+
+.mediumPadding {
+  padding: 50px; }
+
+.smallPadding {
+  padding: 25px; }
+
+.lgMarginTop {
+  margin-top: 100px; }
+
+.mdMarginTop {
+  margin-top: 50px; }
+
+.smMarginTop {
+  margin-top: 25px; }
+
+.clearPadding {
+  padding: 0; }
+
+.clearMargin {
+  margin: 0; }
+
+.bolder {
+  font-weight: 900 !important;
+  text-shadow: 0 1px 0 #FFFFFF; }
+
+.fancy {
+  line-height: 0.5;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #B7C1C5; }
+  .fancy:before, .fancy:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #B7C1C5;
+    top: 0;
+    width: 12vw; }
+  .fancy:before {
+    right: 100%;
+    margin-right: 15px; }
+  .fancy:after {
+    left: 100%;
+    margin-left: 15px; }
+
+#confirmTransaction {
+  height: 100%;
+  background: #FFFFFF;
+  margin-top: 70px; }
+  #confirmTransaction .confirmationPageButtons {
+    margin: 50px 0; }
+  #confirmTransaction ul {
+    padding: 0;
+    margin-bottom: 100px; }
+    #confirmTransaction ul li {
+      list-style: none; }
+
+.transactionContentHolder {
+  border: 1px solid #EEEEEE;
+  margin-top: 30px;
+  overflow: auto;
+  border-radius: 10px;
+  height: auto;
+  padding: 40px; }
+
+.submitButtonHolder {
+  margin: 50px auto; }
+
+.confirmationReceipt {
+  margin-bottom: 50px; }
+
+.circularTextHolder {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #EEEEEE;
+  height: 20px;
+  width: 20px;
+  overflow: auto;
+  padding: 8px;
+  margin-right: 10px;
+  text-align: center; }
+  .circularTextHolder.lg {
+    height: 100px;
+    width: 100px; }
+
+#transactionDetailsTable {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  width: 100%;
+  color: #2E3941; }
+  #transactionDetailsTable tr {
+    margin: 20px 0; }
+    #transactionDetailsTable tr td:last-child {
+      margin-left: 50px; }
