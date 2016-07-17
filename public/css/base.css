@@ -382,6 +382,12 @@ footer {
 .smMarginTop {
   margin-top: 25px; }
 
+.smPaddingTop {
+  padding-top: 25px; }
+
+.mdPaddingTop {
+  padding-top: 50px; }
+
 .clearPadding {
   padding: 0; }
 
@@ -430,6 +436,12 @@ footer {
 
 .smMarginTop {
   margin-top: 25px; }
+
+.smPaddingTop {
+  padding-top: 25px; }
+
+.mdPaddingTop {
+  padding-top: 50px; }
 
 .clearPadding {
   padding: 0; }
@@ -555,7 +567,7 @@ body {
 .boldTextContainer {
   margin-bottom: 75px; }
 
-.responsive_img {
+.responsiveImg {
   width: 100%; }
 
 .transImg {
@@ -598,6 +610,12 @@ body {
 .smMarginTop {
   margin-top: 25px; }
 
+.smPaddingTop {
+  padding-top: 25px; }
+
+.mdPaddingTop {
+  padding-top: 50px; }
+
 .clearPadding {
   padding: 0; }
 
@@ -629,28 +647,42 @@ body {
     left: 100%;
     margin-left: 15px; }
 
-#confirmTransaction {
+.whiteContentArea {
   height: 100%;
   background: #FFFFFF;
-  margin-top: 70px; }
-  #confirmTransaction .confirmationPageButtons {
-    margin: 50px 0; }
-  #confirmTransaction ul {
+  margin-top: 70px;
+  padding: 30px 0; }
+  .whiteContentArea .pageBodyButtons {
+    margin: 40px 0; }
+  .whiteContentArea ul {
     padding: 0;
     margin-bottom: 100px; }
-    #confirmTransaction ul li {
+    .whiteContentArea ul li {
       list-style: none; }
 
-.transactionContentHolder {
+.transparentCard {
   border: 1px solid #EEEEEE;
-  margin-top: 30px;
   overflow: auto;
   border-radius: 10px;
   height: auto;
   padding: 40px; }
 
+.thumbnailHolder {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+  width: 60px; }
+
 .submitButtonHolder {
   margin: 50px auto; }
+
+.postInfo {
+  margin: 20px 0; }
+  .postInfo .iconPrefixedText {
+    margin: 40px 0; }
 
 .confirmationReceipt {
   margin-bottom: 50px; }
@@ -672,6 +704,9 @@ body {
   .circularTextHolder.lg {
     height: 100px;
     width: 100px; }
+  .circularTextHolder.md {
+    height: 50px;
+    width: 50px; }
 
 #transactionDetailsTable {
   border-collapse: separate;

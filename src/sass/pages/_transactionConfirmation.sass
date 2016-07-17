@@ -2,13 +2,14 @@
 @import abstracts/_variables
 
 
-#confirmTransaction
+.whiteContentArea
     height: 100%
     background: $easyWhite
     margin-top: 70px
+    padding: 30px 0
 
-    .confirmationPageButtons
-        margin: 50px 0
+    .pageBodyButtons
+        margin: 40px 0
 
     ul
         padding: 0
@@ -16,18 +17,28 @@
         li
             list-style: none
 
-.transactionContentHolder
+.transparentCard
     border: 1px solid $easyGrey
-    margin-top: 30px
     overflow: auto
     border-radius: 10px
     height: auto
     padding: 40px
 
+.thumbnailHolder
+    @include border-radius(50%)
+    width: 60px
+
+
 .submitButtonHolder
     margin: 50px auto
 
-.confirmationReceipt
+.postInfo
+    margin: 20px 0
+    .iconPrefixedText
+        margin: 40px 0
+
+
+.confirmationReceipt,
     margin-bottom: 50px
 
 .circularTextHolder
@@ -42,6 +53,9 @@
     &.lg
         height: 100px
         width: 100px
+    &.md
+        height: 50px
+        width: 50px
 
 #transactionDetailsTable
     border-collapse: separate
