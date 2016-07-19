@@ -251,7 +251,7 @@ footer {
 
 /* Custom, iPhone Retina */
 .ghostButton, .ghostButton.defaultGreen, .ghostButton.defaultBlue, .ghostButton.invertedGreen, .ghostButton.invertedBlue {
-  padding: 5px 30px;
+  padding: 8px 30px;
   width: 130px;
   height: 35px;
   font-weight: 200;
@@ -389,8 +389,9 @@ footer {
 .lgMarginTop {
   margin-top: 100px; }
 
-.mdMarginTop {
-  margin-top: 50px; }
+.mdMarginTop,
+.pushDown {
+  margin-top: 50px !important; }
 
 .smMarginTop {
   margin-top: 25px; }
@@ -407,11 +408,24 @@ footer {
 .mdPaddingBottom {
   padding-bottom: 50px; }
 
+.marginSm {
+  margin: 25px 0; }
+
+.marginMd {
+  margin: 50px 0; }
+
+.marginLg {
+  margin: 75px 0; }
+
 .smVPadding {
   padding: 25px 0; }
 
 .mdVPadding {
   padding: 50px; }
+
+.hCentered {
+  text-align: center;
+  margin: 0 auto; }
 
 .clearPadding {
   padding: 0; }
@@ -422,6 +436,49 @@ footer {
 .bolder {
   font-weight: 900 !important;
   text-shadow: 0 1px 0 #FFFFFF; }
+
+.customLabel * {
+  color: #828787; }
+
+.pullUp {
+  margin-top: -50px; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 2px solid #EEEEEE;
+  text-align: center;
+  font-size: 33.33333px;
+  margin: 0 auto; }
+  .circle.lg {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto; }
+  .circle.md {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto; }
+  .circle.sm {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto; }
 
 .fancy {
   line-height: 0.5;
@@ -456,8 +513,9 @@ footer {
 .lgMarginTop {
   margin-top: 100px; }
 
-.mdMarginTop {
-  margin-top: 50px; }
+.mdMarginTop,
+.pushDown {
+  margin-top: 50px !important; }
 
 .smMarginTop {
   margin-top: 25px; }
@@ -474,11 +532,24 @@ footer {
 .mdPaddingBottom {
   padding-bottom: 50px; }
 
+.marginSm {
+  margin: 25px 0; }
+
+.marginMd {
+  margin: 50px 0; }
+
+.marginLg {
+  margin: 75px 0; }
+
 .smVPadding {
   padding: 25px 0; }
 
 .mdVPadding {
   padding: 50px; }
+
+.hCentered {
+  text-align: center;
+  margin: 0 auto; }
 
 .clearPadding {
   padding: 0; }
@@ -489,6 +560,49 @@ footer {
 .bolder {
   font-weight: 900 !important;
   text-shadow: 0 1px 0 #FFFFFF; }
+
+.customLabel * {
+  color: #828787; }
+
+.pullUp {
+  margin-top: -50px; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 2px solid #EEEEEE;
+  text-align: center;
+  font-size: 33.33333px;
+  margin: 0 auto; }
+  .circle.lg {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto; }
+  .circle.md {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto; }
+  .circle.sm {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto; }
 
 .fancy {
   line-height: 0.5;
@@ -641,8 +755,9 @@ body {
 .lgMarginTop {
   margin-top: 100px; }
 
-.mdMarginTop {
-  margin-top: 50px; }
+.mdMarginTop,
+.pushDown {
+  margin-top: 50px !important; }
 
 .smMarginTop {
   margin-top: 25px; }
@@ -659,11 +774,24 @@ body {
 .mdPaddingBottom {
   padding-bottom: 50px; }
 
+.marginSm {
+  margin: 25px 0; }
+
+.marginMd {
+  margin: 50px 0; }
+
+.marginLg {
+  margin: 75px 0; }
+
 .smVPadding {
   padding: 25px 0; }
 
 .mdVPadding {
   padding: 50px; }
+
+.hCentered {
+  text-align: center;
+  margin: 0 auto; }
 
 .clearPadding {
   padding: 0; }
@@ -674,6 +802,49 @@ body {
 .bolder {
   font-weight: 900 !important;
   text-shadow: 0 1px 0 #FFFFFF; }
+
+.customLabel * {
+  color: #828787; }
+
+.pullUp {
+  margin-top: -50px; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 2px solid #EEEEEE;
+  text-align: center;
+  font-size: 33.33333px;
+  margin: 0 auto; }
+  .circle.lg {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto; }
+  .circle.md {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto; }
+  .circle.sm {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 2px solid #EEEEEE;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto; }
 
 .fancy {
   line-height: 0.5;

@@ -1,3 +1,5 @@
+@import abstracts/_mixins
+
 .largePadding
     padding: 80px
 
@@ -10,8 +12,9 @@
 .lgMarginTop
     margin-top: 100px
 
-.mdMarginTop
-    margin-top: 50px
+.mdMarginTop,
+.pushDown
+    margin-top: 50px!important
 
 .smMarginTop
     margin-top: 25px
@@ -28,11 +31,24 @@
 .mdPaddingBottom
     padding-bottom: 50px
 
+.marginSm
+  margin: 25px 0
+
+.marginMd
+  margin: 50px 0
+
+.marginLg
+  margin: 75px 0
+
 .smVPadding
     padding: 25px 0
 
 .mdVPadding
     padding: 50px
+
+.hCentered
+  text-align: center
+  margin: 0 auto
 
 .clearPadding
     padding: 0
@@ -43,6 +59,21 @@
 .bolder
     font-weight: 900!important
     text-shadow: 0 1px 0 $easyWhite
+
+.customLabel *
+    color: #828787
+
+.pullUp
+    margin-top: -50px
+
+.circle
+  @include circle()
+  &.lg
+      @include circle(150px)
+  &.md
+      @include circle(75px)
+  &.sm
+      @include circle(45px)
 
 .fancy
     line-height: 0.5

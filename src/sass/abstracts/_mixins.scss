@@ -4,3 +4,14 @@
     }
     border-radius:$radius;
 }
+
+@mixin circle($width: 100px) {
+    width: $width;
+    height: $width;
+    line-height: $width;
+    border-radius: 50%;
+    border: 2px solid $easyGrey;
+    text-align: center;
+    font-size: $width / 3;
+    margin: 0 auto;
+}
