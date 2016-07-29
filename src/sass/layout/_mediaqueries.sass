@@ -28,7 +28,7 @@
     .verticallyCenteredContainer
         display: inline-block!important
 
-    #introArea
+    #sliderImgContainer
         display: inline-block!important
         text-align: center
         width: 100%
@@ -141,7 +141,7 @@
 @media only screen and (min-width : 320px)
     body
         font-size: 1.4em
-    #introArea
+    #sliderImgContainer
         display: block!important
         margin-top: 200px
 
@@ -153,34 +153,37 @@
 // -------------------------------
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-    #whyItWorks
-        padding: 40px 60px!important
+  .navbar-right
+    margin-right: 0
 
-        .boldTextContainer
-            margin-bottom: 60px
+  #whyItWorks
+    padding: 40px 60px!important
 
-        .sectionText .textBox
-            padding: 5px 40px
+    .boldTextContainer
+      margin-bottom: 60px
 
-    #conversionFormContainer
-        margin-left:
+    .sectionText .textBox
+      padding: 5px 40px
 
-    footer
-        .firstCol
-            padding-left: 20px
-        .thirdCol
-            padding-left: 0
+  #conversionFormContainer
+    margin-left:
 
-    #conversionFormContainer
-        margin-left: 0!important
+  footer
+    .firstCol
+      padding-left: 20px
+    .thirdCol
+      padding-left: 0
 
-    .jumboText
-        font-size: 50px!important
+  #conversionFormContainer
+    margin-left: 0!important
+
+  .jumboText
+    font-size: 50px!important
 
 @media only screen and (min-width : 768px) and (max-width : 1200px)
-    .introContent
-        margin-top: 9%!important
-        margin-bottom: 9%!important
+  .introContent
+    margin-top: 9%!important
+    margin-bottom: 9%!important
 
 
 /* Medium Devices, Desktops */

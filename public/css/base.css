@@ -47,6 +47,9 @@ p {
   height: 35px;
   border-radius: 6px; }
 
+.navbar-brand {
+  padding: 19.5px 0; }
+
 .navbar {
   background: #FFFFFF;
   height: 70px;
@@ -77,6 +80,9 @@ p {
 .navbar-toggle {
   background-color: #2E3941;
   border: none; }
+
+.sidePadding {
+  margin: 0 65px; }
 
 footer {
   background: #010F19;
@@ -122,15 +128,15 @@ footer {
     height: 70px; }
   .sectionText .textBox {
     padding: 5px 40px !important; }
-  .verticallyCenteredContainer, #introArea, #howItWorks {
+  .verticallyCenteredContainer, #sliderImgContainer, #howItWorks {
     display: inline-block !important; }
-  #introArea {
+  #sliderImgContainer {
     display: inline-block !important;
     text-align: center;
     width: 100%; }
-    #introArea .introContent {
+    #sliderImgContainer .introContent {
       padding: 20px !important; }
-      #introArea .introContent .intro-text {
+      #sliderImgContainer .introContent .intro-text {
         padding: 0;
         margin-top: 40px; }
   #conversionFormContainer {
@@ -198,13 +204,15 @@ footer {
 @media only screen and (min-width: 320px) {
   body {
     font-size: 1.4em; }
-  #introArea {
+  #sliderImgContainer {
     display: block !important;
     margin-top: 200px; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0; }
   #whyItWorks {
     padding: 40px 60px !important; }
     #whyItWorks .boldTextContainer {
@@ -378,7 +386,8 @@ footer {
   text-shadow: none !important;
   background: transparent; }
   .ghostButton:active, .ghostButton:visited, .ghostButton:focus {
-    outline: none; }
+    outline: none;
+    text-decoration: none; }
 
 .ghostButton.invertedGreen.lg, .ghostButton.invertedBlue.lg {
   font-size: 19px;
@@ -751,12 +760,12 @@ footer {
 body .vegas-container {
   position: relative; }
 
-.verticallyCenteredContainer, #introArea, #howItWorks {
+.verticallyCenteredContainer, #sliderImgContainer, #howItWorks {
   display: flex; }
-  .verticallyCenteredContainer > *, #introArea > *, #howItWorks > * {
+  .verticallyCenteredContainer > *, #sliderImgContainer > *, #howItWorks > * {
     align-self: center; }
 
-#introArea {
+#sliderImgContainer {
   min-height: 500px;
   height: 100%;
   position: relative;
@@ -764,14 +773,14 @@ body .vegas-container {
   color: #FFFFFF;
   text-shadow: 0 2px 3px rgba(255, 255, 255, 0.15);
   background: #02101A; }
-  #introArea input[type="text"] {
+  #sliderImgContainer input[type="text"] {
     height: 35px; }
-  #introArea .vegas-slide {
+  #sliderImgContainer .vegas-slide {
     background: linear-gradient(rgba(5, 45, 69, 0.86), rgba(0, 0, 0, 0.99)); }
-  #introArea .introContent {
+  #sliderImgContainer .introContent {
     margin-top: 6%;
     width: 100%; }
-  #introArea .intro-text {
+  #sliderImgContainer .intro-text {
     padding-left: 14%; }
 
 #conversionFormContainer {
@@ -1060,3 +1069,6 @@ body .vegas-container {
     margin: 20px 0; }
     #transactionDetailsTable tr td:last-child {
       margin-left: 50px; }
+
+#profile {
+  display: none; }

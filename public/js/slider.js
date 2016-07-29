@@ -1,4 +1,4 @@
-$("#introArea").vegas({
+$("#sliderImgContainer").vegas({
     delay: 8000,
     shuffle: true,
     overlay: true,
