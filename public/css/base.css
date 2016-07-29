@@ -79,7 +79,7 @@ p {
   border: none; }
 
 footer {
-  background: linear-gradient(rgba(1, 15, 26, 0.93), #010F19);
+  background: #010F19;
   border-top: 1px solid rgba(64, 74, 82, 0.48);
   padding-top: 80px;
   padding-bottom: 50px;
@@ -249,6 +249,125 @@ footer {
     font-size: 2.5em !important; } }
 
 /* Custom, iPhone Retina */
+@media (max-width: 767px) {
+  #wrapper {
+    padding-left: 0; }
+  #sidebar-wrapper {
+    left: 0; }
+  #wrapper.active {
+    position: relative;
+    left: 250px; }
+  #wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s; }
+  #menu-toggle {
+    display: inline-block; }
+  .inset {
+    padding: 15px; } }
+
+#wrapper {
+  margin-left: 240px; }
+
+#sidebar-wrapper {
+  margin-left: -240px;
+  margin-top: 50px;
+  left: 240px;
+  width: 240px;
+  background: #010F19;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  border-right: 1px solid #02090E; }
+
+#wrapper.active {
+  padding-left: 0; }
+  #wrapper.active #sidebar-wrapper {
+    left: 0; }
+
+#page-content-wrapper {
+  background: #FFFFFF;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  width: 100%; }
+
+.sidebar-nav li a:hover, .sidebar-nav li a:focus {
+  color: #03E04C;
+  border-left: 5px solid #03E04C;
+  background: #010F19;
+  text-decoration: none; }
+
+.activeLink {
+  border-left: 5px solid #03E04C; }
+  .activeLink:hover {
+    padding-left: 0;
+    border-left: none; }
+  .activeLink * {
+    color: #03E04C; }
+  .activeLink a span:before {
+    color: #03E04C !important; }
+
+.sidebar-nav {
+  position: absolute;
+  top: 70px;
+  width: 240px;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .sidebar-nav li {
+    line-height: 40px;
+    text-indent: 20px;
+    border-bottom: 1px solid #02090E; }
+    .sidebar-nav li:first-child {
+      border-top: 1px solid #02090E; }
+    .sidebar-nav li a {
+      color: #999999;
+      border-left: 5px solid #010F19;
+      height: 55px;
+      display: block;
+      padding-top: 20px;
+      text-decoration: none; }
+      .sidebar-nav li a:hover span:before, .sidebar-nav li a:focus span:before {
+        color: #03E04C; }
+      .sidebar-nav li a span:before {
+        color: #41484c;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 20px;
+        line-height: 150%; }
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none; }
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px; }
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999; }
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff; }
+
+.content-header {
+  height: 65px;
+  line-height: 65px; }
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block; }
+
+#menu-toggle {
+  text-decoration: none; }
+
+.btn-menu {
+  color: #000; }
+
 .ghostButton, .ghostButton.defaultGreen, .ghostButton.defaultBlue, .ghostButton.invertedGreen, .ghostButton.invertedBlue {
   padding: 8px 30px;
   width: 130px;
@@ -280,7 +399,8 @@ footer {
   border: 1px solid #0593E7; }
   .ghostButton:hover {
     background: #0593E7;
-    color: #FFFFFF !important; }
+    color: #FFFFFF !important;
+    text-decoration: none; }
   .ghostButton.defaultGreen {
     -moz-border-radius: 9999px;
     -webkit-border-radius: 9999px;
@@ -293,7 +413,8 @@ footer {
     border: 1px solid #03E04C; }
     .ghostButton.defaultGreen:hover {
       background: #03E04C;
-      color: #FFFFFF !important; }
+      color: #FFFFFF !important;
+      text-decoration: none; }
   .ghostButton.defaultBlue {
     -moz-border-radius: 9999px;
     -webkit-border-radius: 9999px;
@@ -306,7 +427,8 @@ footer {
     border: 1px solid #0593E7; }
     .ghostButton.defaultBlue:hover {
       background: #0593E7;
-      color: #FFFFFF !important; }
+      color: #FFFFFF !important;
+      text-decoration: none; }
   .ghostButton.invertedGreen {
     -moz-border-radius: 9999px;
     -webkit-border-radius: 9999px;
@@ -321,7 +443,8 @@ footer {
     color: #FFFFFF !important; }
     .ghostButton.invertedGreen:hover {
       background: #03E04C;
-      color: #FFFFFF !important; }
+      color: #FFFFFF !important;
+      text-decoration: none; }
     .ghostButton.invertedGreen:hover {
       background: transparent !important;
       color: #03E04C !important; }
@@ -339,7 +462,8 @@ footer {
     color: #FFFFFF !important; }
     .ghostButton.invertedBlue:hover {
       background: #0593E7;
-      color: #FFFFFF !important; }
+      color: #FFFFFF !important;
+      text-decoration: none; }
     .ghostButton.invertedBlue:hover {
       background: transparent !important;
       color: #0593E7 !important; }
@@ -624,10 +748,8 @@ footer {
     left: 100%;
     margin-left: 15px; }
 
-body {
-  background: #EEEEEE; }
-  body .vegas-container {
-    position: relative; }
+body .vegas-container {
+  position: relative; }
 
 .verticallyCenteredContainer, #introArea, #howItWorks {
   display: flex; }

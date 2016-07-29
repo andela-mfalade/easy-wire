@@ -18,7 +18,7 @@
     .container>.navbar-header
         height: 70px
 
-    //---------------------------- 
+    //----------------------------
 
     //---- HeroArea related MQs -----
     .sectionText
@@ -49,7 +49,7 @@
     .transImg
         display: none
 
-    #howItWorks 
+    #howItWorks
         .imgHolder
             max-width: 90px
             height: 130px
@@ -89,7 +89,7 @@
 
     .img-responsive
         margin: 0 auto
-    //------------------------------ 
+    //------------------------------
 
 
 
@@ -145,7 +145,7 @@
         display: block!important
         margin-top: 200px
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 // @media only screen and (min-width : 480px)
 
 
@@ -161,11 +161,11 @@
 
         .sectionText .textBox
             padding: 5px 40px
-    
-    #conversionFormContainer
-        margin-left: 
 
-    footer 
+    #conversionFormContainer
+        margin-left:
+
+    footer
         .firstCol
             padding-left: 20px
         .thirdCol
@@ -181,7 +181,7 @@
     .introContent
         margin-top: 9%!important
         margin-bottom: 9%!important
-    
+
 
 /* Medium Devices, Desktops */
 // @media only screen and (min-width : 992px)
@@ -213,11 +213,36 @@
 /* Small Devices, Tablets */
 // @media only screen and (max-width : 768px)
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
     .jumboText
         font-size: 2.5em !important;
 
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 // @media only screen and (max-width : 320px)
+
+
+
+@media (max-width:767px)
+
+  #wrapper
+    padding-left: 0
+
+  #sidebar-wrapper
+    left: 0
+
+  #wrapper.active
+    position: relative
+    left: 250px
+
+  #wrapper.active #sidebar-wrapper
+    left: 250px
+    width: 250px
+    transition: all 0.4s ease 0s
+
+  #menu-toggle
+    display: inline-block
+
+  .inset
+    padding: 15px

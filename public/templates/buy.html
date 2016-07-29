@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title> Easy Waya Home</title>
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans|Lato|Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/base.css">
 
-    <!-- Font Awesome Embed code -->
-    <!-- <script src="https://use.fontawesome.com/9651d7f0f4.js"></script> -->
+    <title> Easy Waya Home</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans|Lato|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <script src="https://use.fontawesome.com/9651d7f0f4.js"></script>
 </head>
 
 <body>
@@ -41,10 +38,10 @@
                         <a href="paymentinfo.html">How it works</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="">Send</a>
+                        <a href="send.html">Send</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="buy.html">Buy</a>
+                        <a href="">Buy</a>
                     </li>
                     <li class="page-scroll">
                         <div class="buttonHolder">
@@ -70,248 +67,218 @@
         </div>
     </section>
 
-    <!-- Grid Section -->
-    <section class="whiteContentArea">
-        <div class="container">
-            <div class="row smPaddingTop">
-                <div class="col-lg-2">
-                    <ul>
-                        <li>
-                            <div class="pageBodyButtons">
-                                <a href="#" class="ghostButton fixedWidth">Send</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pageBodyButtons">
-                                <a href="#" class="ghostButton fixedWidth">Buy</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pageBodyButtons">
-                                <a href="#" class="ghostButton fixedWidth">Track</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pageBodyButtons">
-                                <a href="#" class="ghostButton fixedWidth">Recipients</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pageBodyButtons">
-                                <a href="#" class="ghostButton fixedWidth">Profile</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="ghostButton fixedWidth">Logout</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="col-lg-7">
-                    <div class="transparentCard">
-                        <!-- <div class="col-md-2">
-                          <div class="circle sm">
-                            Rate
-                          </div>
-                        </div> -->
-                        <div class="marginSm">
-                          <div class="hCentered customLabel">
-                            <p>
-                                Available
-                            </p>
-                            <div class="circle lg">
-                                $10k
-                            </div>
-                          </div>
-                          <div class="row marginSm">
-                            <div class="col-md-4 hCentered customLabel pullUp">
-                                <p>
-                                    Min Bid Rate
-                                </p>
-                                <div class="circle md">
-                                    N300
-                                </div>
-                            </div>
-                            <div class="col-md-4 hCentered customLabel pushDown">
-                                <p>
-                                    Time Remaining
-                                </p>
-                                <div class="circle md">
-                                    2HRS
-                                </div>
-                            </div>
-                            <div class="col-md-4 hCentered customLabel pullUp">
-                                <p>
-                                    Suggested
-                                </p>
-                                <div class="circle md">
-                                    N345
-                                </div>
-                            </div>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li>
+                        <a href="send.html" data-scroll>
+                            <span class="fa fa-paper-plane" aria-hidden="true"></span><span>Send</span>
+                        </a>
+                    </li>
+                    <li class="activeLink">
+                        <a href="buy.html" data-scroll>
+                            <span class="fa fa-money" aria-hidden="true"></span><span>Buy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="confirmation.html" data-scroll>
+                            <span class="fa fa-exchange"></span><span>Transfer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="paymentinfo.html" data-scroll>
+                            <span class="fa fa-user-plus"></span><span>Recipients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#profile" data-scroll>
+                            <span class="fa fa-user"></span><span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#logout" data-scroll>
+                            <span class="fa fa-sign-out"></span><span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper" class="container">
+            <div class="page-content inset col-lg-offset-1 col-lg-10" data-spy="scroll" data-target="#spy">
+              <section>
+                <div class="row">
+                  <div class="col-md-9">
+                      <div class="transparentCard">
+                      <!-- <div class="col-md-2">
+                        <div class="circle sm">
+                          Rate
+                        </div>
+                      </div> -->
+                      <div class="marginSm">
+                        <div class="hCentered customLabel">
+                          <p>
+                              Available
+                          </p>
+                          <div class="circle lg">
+                              $10k
                           </div>
                         </div>
-
-
-                        <div class="locationFlag">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row verticallyCenteredContainer">
-                                        <div class="col-sm-8 verticallyCenteredContainer">
-                                            <p>
-                                                U.S.D
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-4 verticallyCenteredContainer">
-                                            USD 1000.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
+                        <div class="row marginSm">
+                          <div class="col-md-4 hCentered customLabel pullUp">
+                              <p>
+                                  Min Bid Rate
+                              </p>
+                              <div class="circle md">
+                                  N300
+                              </div>
+                          </div>
+                          <div class="col-md-4 hCentered customLabel pushDown">
+                              <p>
+                                  Time Remaining
+                              </p>
+                              <div class="circle md">
+                                  2HRS
+                              </div>
+                          </div>
+                          <div class="col-md-4 hCentered customLabel pullUp">
+                              <p>
+                                  Suggested
+                              </p>
+                              <div class="circle md">
+                                  N345
+                              </div>
+                          </div>
                         </div>
+                      </div>
 
-                        <div class="locationFlag">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row verticallyCenteredContainer">
-                                        <div class="col-sm-8 verticallyCenteredContainer">
-                                            <p>
-                                                BID RATE
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-4 verticallyCenteredContainer">
-                                            NGN 310.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
 
-                        <div class="locationFlag">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row verticallyCenteredContainer">
-                                        <div class="col-sm-8 verticallyCenteredContainer">
-                                            <p>
-                                                TOTAL (NGN)
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-4 verticallyCenteredContainer">
-                                            USD 310.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <br>
-
-                        <div>
+                      <div class="locationFlag">
                           <div class="row">
                               <div class="col-sm-12">
                                   <div class="row verticallyCenteredContainer">
                                       <div class="col-sm-8 verticallyCenteredContainer">
                                           <p>
-                                              Fee
+                                              U.S.D
                                           </p>
                                       </div>
                                       <div class="col-sm-4 verticallyCenteredContainer">
-                                          NGN 1000.00
+                                          USD 1000.00
                                       </div>
                                   </div>
                               </div>
                           </div>
-                        </div>
+                          <hr>
+                      </div>
 
-                        <div>
+                      <div class="locationFlag">
                           <div class="row">
                               <div class="col-sm-12">
                                   <div class="row verticallyCenteredContainer">
                                       <div class="col-sm-8 verticallyCenteredContainer">
                                           <p>
-                                              Total
+                                              BID RATE
                                           </p>
                                       </div>
                                       <div class="col-sm-4 verticallyCenteredContainer">
-                                          NGN 311,000.00
+                                          NGN 310.00
                                       </div>
                                   </div>
                               </div>
                           </div>
-                        </div>
+                          <hr>
+                      </div>
 
-                        <br>
+                      <div class="locationFlag">
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <div class="row verticallyCenteredContainer">
+                                      <div class="col-sm-8 verticallyCenteredContainer">
+                                          <p>
+                                              TOTAL (NGN)
+                                          </p>
+                                      </div>
+                                      <div class="col-sm-4 verticallyCenteredContainer">
+                                          USD 310.00
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr>
+                      </div>
+                      <br>
+
+                      <div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row verticallyCenteredContainer">
+                                    <div class="col-sm-8 verticallyCenteredContainer">
+                                        <p>
+                                            Fee
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4 verticallyCenteredContainer">
+                                        NGN 1000.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row verticallyCenteredContainer">
+                                    <div class="col-sm-8 verticallyCenteredContainer">
+                                        <p>
+                                            Total
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4 verticallyCenteredContainer">
+                                        NGN 311,000.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <br>
                     </div>
-
                     <div class="postInfo">
                       <div class="text-center marginMd">
-                          <a href="#" class="ghostButton invertedBlue lg">Continue</a>
+                        <a href="#" class="ghostButton invertedBlue lg">Continue</a>
                       </div>
                     </div>
-                </div>
+                  </div>
 
-                <div class="col-lg-3 lgMarginTop mediumPadding">
+
+                  <div class="col-lg-3 lgMarginTop mediumPadding">
                     <p class="iconPrefixedText">
-                        <span class="circularTextHolder">&nbsp;&nbsp;!&nbsp;&nbsp;</span>
-                        <span>&nbsp;</span>
+                      <span class="circularTextHolder">&nbsp;&nbsp;!&nbsp;&nbsp;</span>
+                      <span>&nbsp;</span>
                     </p>
                     <br>
                     <p>Note:</p>
                     <p>Available Amount  &nbsp;&nbsp;$10k</p><hr>
                     <p>Min Amount &nbsp;&nbsp;$100 </p><hr>
                     <p>Min Bid Rate  &nbsp;&nbsp;N310</p><hr>
+                  </div>
                 </div>
 
+              </section>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
-    <footer class="text-center" id="footer">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <h4>USER OUR QUICK LINKS</h4>
-                        <div class="quickLinksHolder firstCol">
-                            <hr class="divider">
-                            <p><a href="" class="quickLink">Home</a></p>
-                            <p><a href="" class="quickLink">About</a></p>
-                            <p><a href="" class="quickLink">Contact</a></p>
-                            <p><a href="" class="quickLink">FAQ</a></p>
-                            <p><a href="" class="quickLink">Blog</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h4>GET EXCLUSIVE OFFERS</h4>
-                        <br />
-                        <input type="text" name="" class="ghostForm blue white">
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h4>JOIN OUR CONVERSATIONS</h4>
-                        <div class="quickLinksHolder thirdCol">
-                            <hr class="divider">
-                            <p><i class="fa fa-twitter socialIcons" aria-hidden="true"></i><a href="" class="quickLink">Follow Us On Twitter</a></p>
-                            <p><i class="fa fa-facebook socialIcons" aria-hidden="true"></i><a href="" class="quickLink">Like Us On Facebook</a></p>
-                            <p><i class="fa fa-envelope-o socialIcons" aria-hidden="true"></i>
-<a href="" class="quickLink">support@easywaya.com</a></p>
-                            <p><i class="fa fa-mobile socialIcons" aria-hidden="true"></i><a href="" class="quickLink">+(1) 234 567 89</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row lgMarginTop">
-                    <p class="copyright">Copyright EasyWaya 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 
     <!-- Jquery -->
     <script src="../js/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
 </body>
 

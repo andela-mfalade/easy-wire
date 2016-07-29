@@ -1,0 +1,107 @@
+#wrapper
+  margin-left: 240px
+
+#sidebar-wrapper
+  margin-left: -240px
+  margin-top: 50px
+  left: 240px
+  width: 240px
+  background: $easyDeepBlue
+  position: fixed
+  height: 100%
+  overflow-y: auto
+  z-index: 1000
+  border-right: 1px solid #02090E
+
+#wrapper.active
+  padding-left: 0
+
+  #sidebar-wrapper
+    left: 0
+
+#page-content-wrapper
+  background: $easyWhite
+  padding-top: 120px
+  padding-bottom: 100px
+  width: 100%
+
+%sidebarListItemProps,
+  color: $easyGreen
+  border-left: 5px solid $easyGreen
+  background: $easyDeepBlue
+  text-decoration: none
+
+.activeLink
+  border-left: 5px solid $easyGreen
+  &:hover
+    padding-left: 0
+    border-left: none
+  *
+    color: $easyGreen
+
+  a
+    span:before
+      color: $easyGreen!important
+
+.sidebar-nav
+  position: absolute
+  top: 70px
+  width: 240px
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    line-height: 40px
+    text-indent: 20px
+    border-bottom: 1px solid #02090E
+    &:first-child
+      border-top: 1px solid #02090E
+    a
+      color: #999999
+      border-left: 5px solid $easyDeepBlue
+      height: 55px
+      display: block
+      padding-top: 20px
+      text-decoration: none
+      &:hover,
+      &:focus
+        @extend %sidebarListItemProps
+        span:before
+          color: $easyGreen
+      span:before
+        color: #41484c
+        font-size: 16px
+        padding-left: 10px
+        padding-right: 20px
+        line-height: 150%
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus
+  text-decoration: none
+
+.sidebar-nav > .sidebar-brand
+  height: 65px
+  line-height: 60px
+  font-size: 18px
+
+.sidebar-nav > .sidebar-brand a
+  color: #999999
+
+.sidebar-nav > .sidebar-brand a:hover
+  color: #fff
+
+.content-header
+  height: 65px
+  line-height: 65px
+
+.content-header h1
+  margin: 0
+  margin-left: 20px
+  line-height: 65px
+  display: inline-block
+
+#menu-toggle
+    text-decoration: none
+
+.btn-menu
+  color: #000
