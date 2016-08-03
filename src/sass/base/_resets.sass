@@ -29,6 +29,16 @@ a,
 p
     color: $easyDarkGrey
     font-weight: 400
+body,
+html
+  position: relative
+  min-height: 100%
+
+section
+  overflow: hidden
+
+form
+  overflow: hidden
 
 .navbar-default .navbar-nav>li a
     &:hover,
@@ -66,3 +76,19 @@ p
       border: 1px solid $easyLightGrey
       outline: none
       border-radius: 3px
+
+fieldset
+  border: none
+  margin: 2em 0
+  padding: 0 0 1em 0
+  border-bottom: solid 1px #eeeeee
+  &.open
+    border-bottom: none
+    .fancy-group
+      color: $easyBlue
+      font-weight: bold
+      .circularTextHolder
+        border: 4px dotted $easyBlue
+
+legend
+  font-weight: bold

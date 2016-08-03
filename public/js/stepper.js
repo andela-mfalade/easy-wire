@@ -25,26 +25,12 @@
 
     // when user navigates forwards
     $(settings.nextNav).on('click', function(){
-      if (settings.navType === 'section'){
-        showNextSection($(this).closest(settings.section));
-      }
-      else if (settings.navType === 'global'){
-        if (!lastSectionIsOpen()){
-          showNextSection(form.find($('.open')));
-        }
-      }
+      showNextSection($(this).closest(settings.section));
     })
 
     // when user navigates backwards
     $(settings.prevNav).on('click', function(){
-      if (settings.navType === 'section'){
-        showPrevSection($(this).closest(settings.section));
-      }
-      else if (settings.navType === 'global'){
-        if (!firstSectionIsOpen()){
-          showPrevSection(form.find($('.open')));
-        }
-      }
+      showPrevSection($(this).closest(settings.section));
     })
 
     // showing moving forward in the form.
@@ -87,17 +73,6 @@
     function showSection(section){
       section.find(settings.wrapper).slideDown(settings.timing);
       section.addClass('open');
-      if (settings.navType === 'global'){
-        if (lastSectionIsOpen()){
-          lastNav();
-        }
-        else if (firstSectionIsOpen()){
-          firstNav();
-        }
-        else{
-          intermediateNav();
-        }
-      }
     };
 
     function firstSectionIsOpen(){
