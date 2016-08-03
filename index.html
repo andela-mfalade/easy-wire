@@ -47,7 +47,7 @@
                     </li>
                     <li class="page-scroll">
                         <div class="buttonHolder">
-                            <a href="#" class="ghostButton defaultGreen">Sign in</a>
+                            <button data-toggle="modal" data-target="#loginModal" href="#" class="ghostButton defaultGreen">Sign in</button>
                         </div>
                     </li>
                     <li class="hideOnMobile">
@@ -321,6 +321,8 @@
     </footer>
 
 
+    <!-- // SIGN UP MODAL STARTS HERE
+    // -->
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
       <div class="modal-dialog">
   	    <div class="modal-content">
@@ -329,8 +331,8 @@
             <h3 class="text-center">Sign up for EasyWaya</h3>
 		      </div>
 		      <div class="modal-body">
-            <div class="smallPadding">
-    			    <form class="smPaddingTop">
+            <div class="">
+    			    <form class="paddingTopSm">
                 <div class="row">
                   <div class="col-lg-6 PaddingTop">
                     <button type="button" class="btn btn-block socialBtn google">Connect with Google</button>
@@ -361,6 +363,75 @@
 	      </div>
       </div>
     </div>
+    <!-- // SIGN UP MODAL STARTS HERE
+    // -->
+
+
+
+    <!-- // LOG IN MODAL STARTS HERE
+    // -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+  	    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h3 class="text-center">Login to your account</h3>
+		      </div>
+		      <div class="modal-body">
+            <div class="row smallPadding">
+    			    <form class="">
+                <div class="row">
+                  <div class="PaddingTop">
+                    <div class="form-group">
+                      <input type="email" class="form-control signupInput" id="loginEmailInput" placeholder="Your email address">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <input type="password" class="form-control signupInput" id="loginPasswordInput" placeholder="Your Password">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div class="checkbox">
+      			    	    	<label>
+      			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+      			    	    	</label>
+      			    	    </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <a class="pull-right forgotPassword">
+                        Forgot your password?
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-center vMargin">
+                  <span class="fancy">OR</span>
+                </div>
+                <div class="row">
+                  <div class="PaddingTop">
+                    <button type="button" class="btn btn-block socialBtn google">Connect with Google</button>
+                    <br><br>
+                    <button type="button" class="btn btn-block socialBtn facebook">Connect with Facebook</button>
+                  </div>
+                </div>
+                <div class="text-center mdMarginTop">
+                  <button class="ghostButton invertedGreen lg">Submit</button>
+                  <br><br>
+                  <p>
+                    Don't have an account yet?
+                    <a href="#">Sign up</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+		      </div>
+	      </div>
+      </div>
+    </div>
+    <!-- // LOG IN MODAL ENDES HERE
+    // -->
 
     <script src="public/lib/jquery/dist/jquery.min.js"></script>
     <script src="public/js/vegas.min.js"></script>

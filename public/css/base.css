@@ -49,11 +49,16 @@ p {
 .navbar-brand {
   padding: 19.5px 0; }
 
-.modal {
-  padding-top: 80px; }
-
 .modal-content {
   border-radius: 3px; }
+
+.modal-body form {
+  width: 80%;
+  margin: 0 auto; }
+  .modal-body form input {
+    border: 1px solid #B7C1C5;
+    outline: none;
+    border-radius: 3px; }
 
 .navbar {
   background: #FFFFFF;
@@ -497,7 +502,8 @@ footer {
 .socialBtn {
   border: none;
   outline: none;
-  padding: 11px; }
+  padding: 11px;
+  border-radius: 3px; }
   .socialBtn.google {
     background: #DC4A38;
     color: #FFFFFF;
@@ -528,6 +534,10 @@ footer {
     color: #0593E7;
     outline: none; }
 
+.vMargin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
 
@@ -540,23 +550,27 @@ footer {
 .lgMarginTop {
   margin-top: 100px; }
 
+.sideMargin {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 .mdMarginTop,
 .pushDown {
   margin-top: 50px !important; }
 
-.smMarginTop {
+.marginTopSm {
   margin-top: 25px; }
 
-.smPaddingTop {
+.paddingTopSm {
   padding-top: 25px; }
 
 .mdPaddingTop {
   padding-top: 50px; }
 
-.smPaddingBottom {
+.paddingBottomSm {
   padding-bottom: 25px; }
 
-.mdPaddingBottom {
+.paddingBottomMd {
   padding-bottom: 50px; }
 
 .marginSm {
@@ -654,6 +668,10 @@ footer {
 
 .borderLeft {
   border-left: 1px solid #E5E5E5; }
+
+.forgotPassword {
+  padding-top: 10px;
+  color: #0593E7; }
 
 .signupInput {
   width: 100% !important;
@@ -662,6 +680,10 @@ footer {
 .modal-content {
   background: linear-gradient(#F2F4F5, #F5F7F9); }
 
+.vMargin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
 
@@ -674,23 +696,27 @@ footer {
 .lgMarginTop {
   margin-top: 100px; }
 
+.sideMargin {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 .mdMarginTop,
 .pushDown {
   margin-top: 50px !important; }
 
-.smMarginTop {
+.marginTopSm {
   margin-top: 25px; }
 
-.smPaddingTop {
+.paddingTopSm {
   padding-top: 25px; }
 
 .mdPaddingTop {
   padding-top: 50px; }
 
-.smPaddingBottom {
+.paddingBottomSm {
   padding-bottom: 25px; }
 
-.mdPaddingBottom {
+.paddingBottomMd {
   padding-bottom: 50px; }
 
 .marginSm {
@@ -788,6 +814,10 @@ footer {
 
 .borderLeft {
   border-left: 1px solid #E5E5E5; }
+
+.forgotPassword {
+  padding-top: 10px;
+  color: #0593E7; }
 
 body .vegas-container {
   position: relative; }
@@ -907,6 +937,10 @@ body .vegas-container {
     color: #777;
     line-height: 175%; }
 
+.vMargin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
 
@@ -919,23 +953,27 @@ body .vegas-container {
 .lgMarginTop {
   margin-top: 100px; }
 
+.sideMargin {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 .mdMarginTop,
 .pushDown {
   margin-top: 50px !important; }
 
-.smMarginTop {
+.marginTopSm {
   margin-top: 25px; }
 
-.smPaddingTop {
+.paddingTopSm {
   padding-top: 25px; }
 
 .mdPaddingTop {
   padding-top: 50px; }
 
-.smPaddingBottom {
+.paddingBottomSm {
   padding-bottom: 25px; }
 
-.mdPaddingBottom {
+.paddingBottomMd {
   padding-bottom: 50px; }
 
 .marginSm {
@@ -1033,6 +1071,10 @@ body .vegas-container {
 
 .borderLeft {
   border-left: 1px solid #E5E5E5; }
+
+.forgotPassword {
+  padding-top: 10px;
+  color: #0593E7; }
 
 .whiteContentArea {
   height: 100%;
