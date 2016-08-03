@@ -13,6 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans|Lato|Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/stepper.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -238,6 +239,109 @@
                     </div>
                 </div>
               </section>
+
+
+
+
+
+              <section>
+                <form id="sectional">
+                  <p class="form-help-text">
+                    By default, every section has its own navigation element; the nav is shown and hidden along with the rest of the section.
+                  </p>
+                  <fieldset>
+                    <legend>Section One</legend>
+                    <div class="form-section">
+                      <div class="field">
+                        <label for="sectional-text-2">Text 2</label>
+                        <input name="text2" id="sectional-text-2" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-3">Text 3</label>
+                        <input name="text3" id="sectional-text-3" type="text">
+                      </div>
+                      <nav class="form-section-nav">
+                        <span class="btn-std form-nav-next">Next</span>
+                      </nav>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Section Two</legend>
+                    <div class="form-section">
+                      <div class="field">
+                        <label for="sectional-text-4">Text 4</label>
+                        <input name="text4" id="sectional-text-4" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-5">Text 5</label>
+                        <input name="text5" id="sectional-text-5" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-6">Text 6</label>
+                        <input name="text6" id="sectional-text-6" type="text">
+                      </div>
+                      <nav class="form-section-nav">
+                        <span class="btn-secondary form-nav-prev">Prev</span>
+                        <span class="btn-std form-nav-next">Next</span>
+                      </nav>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Section Three</legend>
+                    <div class="form-section">
+                      <div class="field">
+                        <label for="sectional-text-7">Text 7</label>
+                        <input name="text7" id="sectional-text-7" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-8">Text 8</label>
+                        <input name="text8" id="sectional-text-8" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-9">Text 9</label>
+                        <input name="text9" id="sectional-text-9" type="text">
+                      </div>
+                      <nav class="form-section-nav">
+                        <span class="btn-secondary form-nav-prev">Prev</span>
+                        <span class="btn-std form-nav-next">Next</span>
+                      </nav>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Section Four</legend>
+                    <div class="form-section">
+                      <div class="field">
+                        <label for="sectional-text-10">Text 10</label>
+                        <input name="text10" id="sectional-text-10" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-11">Text 11</label>
+                        <input name="text11" id="sectional-text-11" type="text">
+                      </div>
+                      <div class="field">
+                        <label for="sectional-text-12">Text 12</label>
+                        <input name="text12" id="sectional-text-12" type="text">
+                      </div>
+                      <nav class="form-section-nav">
+                        <span class="btn-secondary form-nav-prev">Prev</span>
+                        <button></button><span>Submit</span>
+                      </nav>
+                    </div>
+                  </fieldset>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+              </section>
             </div>
         </div>
     </div>
@@ -245,7 +349,87 @@
     <!-- Jquery -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/stepper.js"></script>
     <script type="text/javascript" src="../js/custom.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#sectional').formalize({
+          timing: 300,
+          nextCallBack: function(){
+            if (validateEmpty($('#sectional .open'))){
+              scrollToNewSection($('#sectional .open'));
+              return true;
+            };
+            return false;
+          },
+          prevCallBack: function(){
+            return scrollToNewSection($('#sectional .open').prev())
+          }
+        });
+        $('#global').formalize({
+          navType: 'global',
+          prevNav: '#global-nav-prev',
+          nextNav: '#global-nav-next',
+          timing: 300,
+          nextCallBack: function(){
+            return validateEmpty($('#global .open'));
+          }
+        });
+
+        $('#btn-global').on('click', function(){
+          $('#btn-sectional').removeClass('disabled');
+          $(this).addClass('disabled');
+          $('#sectional').hide();
+          $('#global').show();
+        });
+
+        $('#btn-sectional').on('click', function(){
+          $('#btn-global').removeClass('disabled');
+          $(this).addClass('disabled');
+          $('#global').hide();
+          $('#sectional').show();
+        });
+
+        $('input').on('keyup change', function(){
+          $(this).closest($('.valid')).removeClass('valid');
+        });
+
+        function validateEmpty(section){
+          var errors = 0;
+          section.find($('.required-field')).each(function(){
+            var $this = $(this),
+              input = $this.find($('input'));
+            if (input.val() === ""){
+              errors++;
+              $this.addClass('field-error');
+              $this.append('\<div class="form-error-msg">This field is required!\</div>');
+            }
+          });
+          if (errors > 0){
+            section.removeClass('valid');
+            return false;
+          }
+          section.find($('.field-error')).each(function(){
+            $(this).removeClass('field-error');
+          });
+          section.find($('.form-error-msg')).each(function(){
+            $(this).remove();
+          });
+          section.addClass('valid');
+          return true;
+        }
+
+        function scrollToNewSection(section){
+          var top = section.offset().top;
+          $("html, body").animate({
+            scrollTop: top
+          }, '200');
+          return true;
+        }
+      });
+    </script>
 </body>
 
 </html>
