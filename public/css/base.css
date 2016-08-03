@@ -82,7 +82,7 @@ fieldset {
       color: #0593E7;
       font-weight: bold; }
       fieldset.open .fancy-group .circularTextHolder {
-        border: 4px dotted #0593E7; }
+        border: 2px solid #0593E7; }
 
 legend {
   font-weight: bold; }
