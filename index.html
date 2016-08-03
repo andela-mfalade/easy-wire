@@ -11,13 +11,11 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Open+Sans|Lato|Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/vegas.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="public/css/base.css">
 
-    <!-- Font Awesome Embed code -->
-    <!-- <script src="https://use.fontawesome.com/9651d7f0f4.js"></script> -->
 </head>
 
 <body>
@@ -57,7 +55,7 @@
                     </li>
                     <li class="page-scroll">
                         <div class="buttonHolder">
-                            <a href="/" class="ghostButton invertedGreen">Sign up</a>
+                            <button data-toggle="modal" data-target="#signupModal" class="ghostButton invertedGreen">Sign up</button>
                         </div>
                     </li>
                 </ul>
@@ -322,9 +320,51 @@
         </div>
     </footer>
 
-    <script src="public/js/jquery.min.js"></script>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+  	    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h3 class="text-center">Sign up for EasyWaya</h3>
+		      </div>
+		      <div class="modal-body">
+            <div class="smallPadding">
+    			    <form class="smPaddingTop">
+                <div class="row">
+                  <div class="col-lg-6 PaddingTop">
+                    <button type="button" class="btn btn-block socialBtn google">Connect with Google</button>
+                    <br><br>
+                    <button type="button" class="btn btn-block socialBtn facebook">Connect with Facebook</button>
+                  </div>
+                  <div class="col-lg-6 borderLeft PaddingTop">
+                    <div class="form-group">
+                      <input type="email" class="form-control signupInput" id="emailAddressInput" placeholder="Your email address">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <input type="password" class="form-control signupInput" id="passwordInput" placeholder="Create a password">
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center mdMarginTop">
+                  <button class="ghostButton invertedGreen lg">Submit</button>
+                  <br><br>
+                  <p>
+                    Already have an account?
+                    <a href="#">Login</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+		      </div>
+	      </div>
+      </div>
+    </div>
+
+    <script src="public/lib/jquery/dist/jquery.min.js"></script>
     <script src="public/js/vegas.min.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="public/js/slider.js"></script>
 </body>
 </html>

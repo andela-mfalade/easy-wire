@@ -43,12 +43,17 @@ p {
 
 .form-control {
   border: 1px solid #EEEEEE;
-  width: 80%;
   height: 35px;
   border-radius: 6px; }
 
 .navbar-brand {
   padding: 19.5px 0; }
+
+.modal {
+  padding-top: 80px; }
+
+.modal-content {
+  border-radius: 3px; }
 
 .navbar {
   background: #FFFFFF;
@@ -336,14 +341,11 @@ footer {
       display: block;
       padding-top: 20px;
       text-decoration: none; }
-      .sidebar-nav li a:hover span:before, .sidebar-nav li a:focus span:before {
+      .sidebar-nav li a:hover *, .sidebar-nav li a:focus * {
         color: #03E04C; }
-      .sidebar-nav li a span:before {
+      .sidebar-nav li a span i {
         color: #41484c;
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 20px;
-        line-height: 150%; }
+        font-size: 18px; }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
@@ -363,6 +365,10 @@ footer {
 .content-header {
   height: 65px;
   line-height: 65px; }
+
+.material-icons {
+  padding-right: 15px;
+  vertical-align: middle; }
 
 .content-header h1 {
   margin: 0;
@@ -487,6 +493,19 @@ footer {
 .paddedBtn {
   height: 43px !important;
   margin-left: 10px; }
+
+.socialBtn {
+  border: none;
+  outline: none;
+  padding: 11px; }
+  .socialBtn.google {
+    background: #DC4A38;
+    color: #FFFFFF;
+    border: 1px solid #DF6B5D; }
+  .socialBtn.facebook {
+    background: #FFFFFF;
+    color: #45629D;
+    border: 1px solid #45629D; }
 
 .ghostForm, .blue, .white {
   max-width: 500px;
@@ -633,6 +652,16 @@ footer {
     left: 100%;
     margin-left: 15px; }
 
+.borderLeft {
+  border-left: 1px solid #E5E5E5; }
+
+.signupInput {
+  width: 100% !important;
+  height: 45px; }
+
+.modal-content {
+  background: linear-gradient(#F2F4F5, #F5F7F9); }
+
 .largePadding, #howItWorks, #whyItWorks, #downloadSection {
   padding: 80px; }
 
@@ -756,6 +785,9 @@ footer {
   .fancy:after {
     left: 100%;
     margin-left: 15px; }
+
+.borderLeft {
+  border-left: 1px solid #E5E5E5; }
 
 body .vegas-container {
   position: relative; }
@@ -998,6 +1030,9 @@ body .vegas-container {
   .fancy:after {
     left: 100%;
     margin-left: 15px; }
+
+.borderLeft {
+  border-left: 1px solid #E5E5E5; }
 
 .whiteContentArea {
   height: 100%;
