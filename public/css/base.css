@@ -586,7 +586,8 @@ footer {
   padding: 25px 0; }
 
 .mdVPadding {
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .hCentered {
   text-align: center;
@@ -732,7 +733,8 @@ footer {
   padding: 25px 0; }
 
 .mdVPadding {
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .hCentered {
   text-align: center;
@@ -989,7 +991,8 @@ body .vegas-container {
   padding: 25px 0; }
 
 .mdVPadding {
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .hCentered {
   text-align: center;
