@@ -1,12 +1,11 @@
 ## EasyWaya
-...
 
 This contains the new UI re-design of EasyWaya
 
 To launch, simply run 
-+ `npm init`
++ `npm install`
 
 Also run
-+ `bower init`
++ `bower install`
 
 Then run `gulp` to compile static files and serve the page.
